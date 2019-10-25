@@ -1,0 +1,43 @@
+tslint sirve para dar formato en el proyecto
+todas las cadenas deben empezar con comilla simple
+Ejemplo mas de una palabra debe estar separado por un guion
+tslint funciona con archivos ts
+eslint funciona para archivo js y tambien para archivos javascript
+favicon.ico 
+style.css es la hoja de estilos global
+si quieren cambiar por otra hoja de estilos hay que ir al archivo angular.json
+polyfills sirve para adecuar los diferentes navegadores que tienen incompatibilidades con javascript
+index.html es la vista donde se va crear todas las demas vistas en donde se 
+assests ahi se almacena los archivos estaticos estilos
+angular cli esta configurado para que cuando pase a produccion se copie con todo lo que esta adentro igual
+environments Por defecto viene con el ambiente de desarrollo y con el produccion con el de produccion dice prod
+main.ts es el primer archivo que ejecuta angular en desarrollo este a su vez ejecuta el primer modulo de angular
+todo los demas archivos modulos de angular tiene la extension modulets
+el primero que se crea es el app.modulets
+el main.ts ejecuta el app.module.ts y este ejecuta una vissta componente que muestra html css y programacion app.components.ts
+
+Angular tiene una serie de generadores 
+La propiedad bootstrap recibe un valor de arreglo 
+AppComponent es el nombre de una clase
+es un ts es una idea es una plantilla de alguna idea
+AppComponent es una vista que lo llama el bootstrap del app.module.ts
+
+Un decorador es una funcion que agregas funcionalidades
+@Component es el decorador que indica que es una clase angular
+con eso especifica donde el esta el codigo html o el codigo css que se relacion con la vista
+como crear decoradores
+A veces los decoradores necesita parametros que necesita valores
+
+En angular solo se manejan tres selectores
+Etiqueta indica que sea etiqueta
+Clase Selector que tenga un atributo que sea class y que tenga un valor
+
+Select: plantilla html
+template: la plan
+en la propiedad declaration registras el nombre del componente
+
+ng serve -o te permite abrir con el navegador
+El component loginComponent tiene un selector que se llama login
+
+entonces para que pueda llamar al login tiene registrarse la etiqueta del selector en el index.html
+que es donde se mapea todas las paginas que administra angular
