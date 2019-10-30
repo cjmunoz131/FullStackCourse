@@ -1,0 +1,90 @@
+El git checkout se enccarga de traer la rama  y hacer un merge
+Learn git branching
+Al realizar git pull es el resultado de git fetch y git merge
+git interactive para aprender sobre las ramas
+git checkout haces el merge y te cambias de rama
+git checkout despues del git fetch
+----------------------------------------------
+Que se necesita para crear un componente?
+Se necesita una clase, todo en Angular son clases
+si queremos utillizar esa clase en otros archivos siempre debemos anteponer la palabra export
+por defecto toda la clase es public salvo que le pongas private
+como le dicen a angular que este componente es una vista?
+Con los decoradores que son funciones que agregan otras funciones y propiedades
+El decorador para componentes es @Component
+Todos los componnetes se importan desde la misma libreria
+Todo decorador necesita de una parametro inicial que en su inicial es el selector (Piensen en los selectores de css)
+Angular solo tiene tres selectores:
+1. Selector de etiqueta <p> <H1> <span> <article>
+Angular lo que hace es crear sus propias etiquetas
+Quiero tener un selector que sea appLogin que se refiere a una vista
+@Component ({
+	selector: "LOGIN",
+	template: "<h1>home</h1>"
+})
+export class ****
+El selector indica en que etiqueta se va a crear el contenido de ese componente
+<login> Aqui va el contenido que queremos indicar aqui es donde indica el componente </login>
+template: <h1>home</h1>
+entonces el resultante del contenido de ese componente resultaria:
+<LOGIN><H1>HOME</H1></LOGIN>}
+tslint Buenas practicas pero solo funciona para typescript
+eslint Buenas practicas que trabaja con javascript y con angular
+LoginComponent
+LoginComponent.ts
+b. todos los componentes se registran en un modulo 
+ngModule({
+	declarations :(AQUI SE REGISTRAN LOS COMPONENTES) Lo que se pone aqui es el nombre de la clase
+	[
+		LoginComponent
+	]
+	bootstrap:[ (Aqui le decimos que la aplicacion arranque con este componente)
+		LoginComponent
+	]
+})
+Angular se encarga de crear una instancia
+c. Si queremos que angular inicie con ese componente entonces usamos la propiedad bootstrap
+bootstrap es un arreglo
+main.ts ----> app.module.ts ----> LoginComponent -----> index.html
+En index.html se encuentra la etiqueta app-root debido a que en el app modules se encuentra como bootstrap al appComponent
+el cual tiene un selector app-root esto se encuentra asociado a una determinada clase en angular la vissta es jalada mediante porlogin
+Generador para crear componentes a partir de lqa plataforma de generacion de componentes
+ng generate component HOME
+ng g c home
+npm start --> ng serve
+npm bulid ---> ng run build
+Directivas Estructurales
+ngif 
+En la clase que incluye al componente se debe poner un metodo para que se llame desde el html
+alt shit a
+LOs eventos tambien se le conocen como salidas o tambien se le conocen como outputs
+Ingresando inforacion al componente, en el cual se debe ingresar atributos
+Estos atrabituos tambien se le conocen como propiedaddes
+visible :
+2. 
+en su mayoria este parametro iene por json
+
+@Input es un decorador del tipo de propiedad
+Todas las salidas son instancias del EventEmitter
+
+keyup
+keydown
+keypress
+change
+input
+
+
+la informacion viaja del typescript al html
+
+this.nombrePropiedad 
+Requerido
+Correo, contraseña
+Debajo de cada input debe aparecer un mensaje
+email
+correo valido con expresiones regulares
+los mensajes aparecen cuando se ingresan los valores
+Ciertas cantidad de caracteres
+evento blur cuando pierdes el foco
+ngif viene de una propiedad o de una operacion de juntar dos operaciones con un operador
+
+
