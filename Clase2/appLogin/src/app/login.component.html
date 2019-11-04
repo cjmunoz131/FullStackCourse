@@ -1,8 +1,14 @@
 <html>
-    <form>
-        <h2>{{headline}}</h2>
-        <input type='text'placeholder='Correo' (input)="valorIngresado($event)"> 
-        <input type='password' placeholder='Contraseña'>
-        <button type='button' (click)="loguearse()">Ingresar</button>
-    </form>
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form">
+                <h2>{{headline}}</h2>
+                <input id="email" type='text' placeholder='Correo' (input)="setEmail($event)">
+                <label for="email">{{emailinvalid}}</label>
+                <input type='password' placeholder='Contraseña' (input)="setPassword($event)">
+                <label for="password">{{passwordinvalid}}</label>
+                <button type='button' (click)="loguearse()">Ingresar</button>
+            </form>
+        </div>
+    </div>
 </html>

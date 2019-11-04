@@ -1,3 +1,4 @@
-<login [headline]="titulo" *ngIf="visible" (onLogging)="login()"></login>
-<app-home *ngIf="!visible"></app-home>
-<button (click)='cambiarVisibiliad()'> Cambiar</button>
+<login [headline]="titulo" [emailinvalid]="emailInvalidMsj" [passwordinvalid]="passwordInvalidMsj" *ngIf="visible" (onEmailInvalid)="emailInvalid($event)"
+    (onPasswordInvalid)="passwordInvalid($event)" (onLogging)="login()"></login>
+<app-home *ngIf="!visible" (onReturnLogin)="cambiarVisibiliad()"></app-home>
+<!-- <button (click)='cambiarVisibiliad()'> Cambiar</button> -->
